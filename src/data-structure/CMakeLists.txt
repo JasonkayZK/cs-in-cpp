@@ -1,5 +1,5 @@
-# 查找当前目录下的所有源文件
-# 并将名称保存到 DATA_STRUCTURE_DIR_LIB_SRCS 变量
-aux_source_directory(. DATA_STRUCTURE_DIR_LIB_SRCS)
+# 编译选项
+add_definitions("-Wall")
+
 # 指定生成 DataStructure 链接库
-add_library (DataStructure ${DATA_STRUCTURE_DIR_LIB_SRCS})
+add_library (DataStructure INTERFACE)
